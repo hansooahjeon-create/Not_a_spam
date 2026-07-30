@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Anonymous Message</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div id="hearts"></div>
+
+<div class="container">
+
+<!-- INTRO -->
+
+<div id="page1" class="page active">
+
+<h2>Anonymous Message</h2>
+
+<p>You received a mysterious letter...</p>
+
+<div class="envelope" onclick="openEnvelope()">
+
+<div class="top"></div>
+
+<div class="bottom"></div>
+
+<div class="paper">
+
+💌
+
+</div>
+
+</div>
+
+<p class="tap">
+
+Tap the envelope
+
+</p>
+
+</div>
+
+<!-- LETTER -->
+
+<div id="page2" class="page">
+
+<div class="letter">
+
+<h1>Hello...</h1>
+
+<p id="typing"></p>
+
+<button onclick="next(3)">
+
+Continue →
+
+</button>
+
+</div>
+
+</div>
+
+<!-- QUESTION -->
+
+<div id="page3" class="page">
+
+<h1>
+
+Would you go on a girls' date with me?
+
+</h1>
+
+<div class="btns">
+
+<button class="yes" onclick="next(4)">
+
+YES 💖
+
+</button>
+
+<button id="noBtn">
+
+NO 🙈
+
+</button>
+
+</div>
+
+</div>
+
+<!-- DATE -->
+
+<div id="page4" class="page">
+
+<h2>
+
+Choose a Date 🌸
+
+</h2>
+
+<div class="grid">
+
+<button onclick="pickDate('July 31')">July 31</button>
+
+<button onclick="pickDate('August 1')">August 1</button>
+
+<button onclick="pickDate('August 2')">August 2</button>
+
+<button onclick="pickDate('August 3')">August 3</button>
+
+<button onclick="pickDate('August 4')">August 4</button>
+
+<button onclick="pickDate('August 5')">August 5</button>
+
+<button onclick="pickDate('August 6')">August 6</button>
+
+<button onclick="pickDate('August 7')">August 7</button>
+
+</div>
+
+</div>
+
+<!-- TIME -->
+
+<div id="page5" class="page">
+
+<h2>
+
+Choose a Time ⏰
+
+</h2>
+
+<div class="grid">
+
+<button onclick="pickTime('4:30 PM')">4:30 PM</button>
+
+<button onclick="pickTime('5:30 PM')">5:30 PM</button>
+
+<button onclick="pickTime('6:30 PM')">6:30 PM</button>
+
+<button onclick="pickTime('7:30 PM')">7:30 PM</button>
+
+<button onclick="pickTime('8:30 PM')">8:30 PM</button>
+
+<button onclick="pickTime('9:30 PM')">9:30 PM</button>
+
+</div>
+
+</div>
+
+<!-- FINAL -->
+
+<div id="page6" class="page">
+
+<div class="final">
+
+<h1>
+
+🎉 It's a Date!
+
+</h1>
+
+<h2>
+
+📍 Duniyav
+
+</h2>
+
+<p id="date"></p>
+
+<p id="time"></p>
+
+<h3>
+
+Can't wait to see you ❤️
+
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+  </html>
